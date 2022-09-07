@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h2>Create Account</h2>
+            </div>
+            <form id="form" class="form">
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Enter username..." id="username" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Email</label>
+                    <input type="email" placeholder="Enter e-mail..." id="email" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Password</label>
+                    <input type="password" placeholder="Password..." id="password"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Confirmation</label>
+                    <input type="password" placeholder="Confirm password..." id="password2"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="start">Date</label>
+
+                    <input type="date" id="start" name="trip-start"
+                    value="2022-09-08"
+                    min="2022-09-07" max="2099-12-31">
+
+                </div>
+
+                <button type="submit" id="submit" onclick="submitFunction()">Submit</button>
+            </form>
+        </div>
+
+      
+<aside>
+    <h4>User list</h4>
+    <div id="userList">
+    <p id="seznam" class="seznam"></p>
+    </div>
+    </aside>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
